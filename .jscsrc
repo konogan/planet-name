@@ -1,0 +1,6 @@
+{
+  "excludeFiles": ["node_modules/**"],
+  "preset": "google",
+  "maximumLineLength": 300,
+  "disallowMultipleLineStrings": true
+}
