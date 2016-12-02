@@ -1,14 +1,16 @@
 {
   "name": "planet-name",
-  "version": "1.2.0",
+  "version": "0.0.0-development",
   "description": "get random planet name",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w"
+    "commit":"git-cz",
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/konogan/planet-name.git"
+    "url": "https://github.com/konogan/planet-name.git"
   },
   "keywords": [
     "random",
@@ -27,6 +29,14 @@
   },
   "devDependencies": {
     "chai": "3.5.0",
-    "mocha": "3.2.0"
+    "commitizen": "2.8.6",
+    "cz-conventional-changelog": "1.2.0",
+    "mocha": "3.2.0",
+    "semantic-release": "6.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
