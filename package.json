@@ -1,0 +1,28 @@
+{
+  "name": "planet-name",
+  "version": "1.0.0",
+  "description": "get random planet name",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konogan/planet-name.git"
+  },
+  "keywords": [
+    "random",
+    "planet",
+    "name",
+    "generator"
+  ],
+  "author": "Konogan <konogan@gmail.com> (http://www.konogan.fr/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konogan/planet-name/issues"
+  },
+  "homepage": "https://github.com/konogan/planet-name#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  }
+}
