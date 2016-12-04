@@ -1,5 +1,5 @@
-var planetName = require('./index');
-var expect = require('chai').expect;
+import {expect} from 'chai';
+import planetName from './index';
 
 describe('planetName', function() {
 
@@ -20,12 +20,12 @@ describe('planetName', function() {
 
   describe('random', function() {
     it('should return a random planet from planetName.all', function() {
-      var randomPlanet = planetName.random();
+      let randomPlanet = planetName.random();
       expect(planetName.all).to.include(randomPlanet);
     });
 
     it('should return an array of random planet if passed a number', function() {
-      var randomPlanets = planetName.random(3);
+      let randomPlanets = planetName.random(3);
       expect(randomPlanets).to.have.length(3);
       randomPlanets.forEach(function(planet) {
         expect(planetName.all).to.include(planet);

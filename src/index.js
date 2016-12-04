@@ -1,7 +1,12 @@
-var uniqueRandomArray = require('unique-random-array');
-var planetNames = require('./planets.json');
-var getRandomPlanet = uniqueRandomArray(planetNames);
+import uniqueRandomArray from 'unique-random-array';
+import planetNames from './planets.json';
 
+let getRandomPlanet = uniqueRandomArray(planetNames);
+
+/**
+ * Planet Name main
+ * @type {Object}
+ */
 module.exports = {
   all: planetNames,
   random: random
